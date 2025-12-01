@@ -1,0 +1,18 @@
+import random
+
+# Without setting a seed (results will vary each run)
+print("Without seed:")
+print(random.random())
+print(random.randint(1, 10))
+
+# Setting a specific seed (results will be consistent)
+random.seed(42)
+print("\nWith seed 42:")
+print(random.random())
+print(random.randint(1, 10))
+
+# Re-using the same seed (will produce the same sequence)
+random.seed(42)
+print("\nWith seed 42 again:")
+print(random.random())
+print(random.randint(1, 10))
